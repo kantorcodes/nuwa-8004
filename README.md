@@ -1,5 +1,7 @@
 ## Notice
 
+- **Current ERC-8004 compatibility (November 2026):** This fork retains an October 2025 registry interface. Its [`ReputationRegistry.giveFeedback`](src/ReputationRegistry.sol) takes a `uint8 score` and signed `feedbackAuth`; the [current EIP-8004 interface](https://eips.ethereum.org/EIPS/eip-8004) takes `int128 value`, `uint8 valueDecimals`, string tags and no `feedbackAuth`. The two ABIs differ. Do not assume the contracts described below implement the current EIP-8004 interface.
+- **License in this fork:** The root [`LICENSE`](LICENSE) file is MIT. The CC0 badge and license section in the copied upstream README below describe the original upstream material, not this fork's root license file.
 - Forked from https://github.com/ChaosChain/trustless-agents-erc-ri
 - This repo provides a contract reference for deploying an ERC-8004 registry on-chain and demoing it with xNUWA
 - xNUWA app repo: https://github.com/nuwa-protocol/xnuwa.app
